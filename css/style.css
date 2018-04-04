@@ -1,0 +1,190 @@
+/*
+Project Name: My upReach App
+Client: upReac
+Author: Madeleine
+Developer @GA in London
+*/
+
+
+/******************************************
+/* SETUP
+/******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+img, video {
+Max-width: 100%
+}
+
+/******************************************
+/* BODY
+/******************************************/
+
+/*.navbar {
+    height: 52px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+} */
+
+body {
+    background-color: #f0f3f4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.profile img {
+	margin: 20px;
+}
+
+.cta {
+	border-radius: 5px;
+	color: white;
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.cta-blue {
+	background: #2196F3;
+	border-bottom: 1px solid #58666e;
+	opacity: .6;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+h2 {
+	color: #58666e;
+	margin: 0;
+}
+
+p {
+	color: #918C8C;
+	margin-left: 20px;
+}
+
+.action {
+	margin: 0;
+}
+
+.action a {
+	font-size: 1.5rem;
+}
+
+img {
+	height: 200px;
+}
+
+section li {
+	list-style: none;
+}
+
+
+/******************************************
+/* HEADER
+/******************************************/
+
+
+header {
+	background-color: #2196F3;
+	width: auto;
+	padding: 10px;
+}
+
+.account {
+	border-radius: 25px;
+	float: left;
+	height: 50px;
+}
+
+.logo img {
+	height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.profile {
+	text-align: center;
+	font-size: 1.75rem;
+}
+
+/******************************************
+/* BOOKINGS
+/******************************************/
+
+h3 {
+	font-size: 1.5rem;
+}
+
+.sign_up {
+	float: right;
+}
+
+.table li {
+	list-style: none;
+	display: inline-block;
+	border: 2px dotted #918C8C;
+	padding: 10px 70px;
+}
+
+/******************************************
+/* FOOTER
+/******************************************/
+
+footer {
+	background-color: #2196F3;
+	bottom: 0;
+	color: white;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+
+menu {
+	float: right;
+	margin-left: 20px;
+}
+
+footer ul {
+	margin: 0;
+}
+
+footer li {
+	display: inline-block;
+}
+
+i {
+	font-size: 20px;
+	color: white;
+	padding: 10px 20px;
+}

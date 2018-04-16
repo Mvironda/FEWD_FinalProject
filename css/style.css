@@ -50,23 +50,57 @@ Max-width: 100%
     border: none;
 } */
 
-body {
-    background-color: #f0f3f4;
+html {
+    background-color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
 }
 
-.profile img {
-	margin: 20px;
+.last {
+	padding-bottom: 50px;
+}
+
+/******************************************
+/* HEADER
+/******************************************/
+
+header {
+	background-color: #2196F3;
+	width: auto;
+	padding: .5em;
+}
+
+.account {
+	border-radius: 2.5em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.profile {
+	height: 3em;
+	border-radius: 50%;
+}
+
+.logo {
+	height: 2em;
+}
+
+/******************************************
+/* HOME
+/******************************************/
+
+.profile-main {
+	text-align: center;
+	font-size: 1.75rem;
+	margin: 1em;
 }
 
 .cta {
-	border-radius: 5px;
+	border-radius: .1em;
 	color: white;
 	display: block;
-	margin-bottom: 10px;
-	padding: 10px;
 	text-align: center;
 }
 
@@ -74,21 +108,29 @@ body {
 	background: #2196F3;
 	border-bottom: 1px solid #58666e;
 	opacity: .6;
+	padding: 1em;
+	margin-bottom: 1em;
 }
 
 a {
 	color: white;
 	text-decoration: none;
+	font-size: 1rem;
 }
 
 h2 {
 	color: #58666e;
-	margin: 0;
+	font-size: 1.6rem;
 }
 
 p {
 	color: #918C8C;
-	margin-left: 20px;
+	margin-left: 1em;
+}
+
+.profile-main img {
+	height: 5em;
+	border-radius: 50%;
 }
 
 .action {
@@ -99,43 +141,8 @@ p {
 	font-size: 1.5rem;
 }
 
-img {
-	height: 200px;
-}
-
-section li {
+.action li {
 	list-style: none;
-}
-
-
-/******************************************
-/* HEADER
-/******************************************/
-
-
-header {
-	background-color: #2196F3;
-	width: auto;
-	padding: 10px;
-}
-
-.account {
-	border-radius: 25px;
-	float: left;
-	height: 50px;
-}
-
-.logo img {
-	height: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.profile {
-	text-align: center;
-	font-size: 1.75rem;
 }
 
 /******************************************
@@ -144,17 +151,216 @@ header {
 
 h3 {
 	font-size: 1.5rem;
+	position: center;
 }
 
-.sign_up {
-	float: right;
+.flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .table li {
 	list-style: none;
 	display: inline-block;
-	border: 2px dotted #918C8C;
-	padding: 10px 70px;
+	border: .2em dotted #918C8C;
+	padding: 1em 7em;
+	width: 45%;
+}
+
+.cta-orange {
+	background: #f5b61a;
+	padding: 1em 2em;
+	margin: 0 1em;
+}
+
+/******************************************
+/* ONLINETESTS
+/******************************************/
+
+h4 {
+	color: #3d5962;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+p {
+	text-align: justify;
+	padding: 0 1em;
+}
+
+.test {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-flow: row wrap;
+}
+
+.level {
+	margin: 1em 2em;
+	text-align: center;
+}
+
+.test i {
+	border-radius: 50%;
+	border: solid .5em #f0f3f4;
+	font-size: 2rem;
+	height: 150px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s;
+	margin: 0 auto;
+}
+
+.test i:before {
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.test i:before {
+  transform: scale(1);
+}
+
+.test i:hover:before {
+	transform: scale(1.1);
+}
+
+.fa-chess-queen {
+	background-color: #6EEB83;
+}
+
+.fa-chess-queen:hover {
+	background-color: #55D26A;
+}
+
+.fa-sort-numeric-up {
+	background-color: #F5B61A;
+}
+
+.fa-sort-numeric-up:hover {
+	background-color: #DC9D01;
+}
+
+.fa-file-alt {
+	background-color: #E83F6F;
+}
+
+.fa-file-alt:hover {
+	background-color: #CF2656;
+}
+
+.fa-users {
+	background-color: #E4572E;
+}
+
+.fa-users:hover {
+	background-color: #CB3E15;
+}
+
+.test a {
+	color: #3d5962;
+	font-size: 1rem;
+	font-weight: bold;
+	align-self: center;
+	display: block;
+	margin: .5em 2em;
+}
+
+/******************************************
+/* TESTS
+/******************************************/
+
+ul, h2, h3, h5 {
+	color: #918C8C;
+}
+
+h5 {
+	font-size: 1.3rem;
+	padding: 10px 30px;
+}
+
+form {
+	padding-bottom: 100px;
+}
+
+legend {
+	color: #2196F3;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+fieldset {
+	padding: 10px;
+	background-color: rgba(33,150,243,.05);
+	border: 1px dotted #2196F3;
+}
+
+.hint {
+	color: #918C8C;
+}
+
+#show-this-on-click {
+	display: none;
+}
+
+.answer {
+	display: block;
+	padding: 5px 50px;
+	color: #918C8C;
+}
+
+.space {
+	padding-bottom: 10px;
+}
+
+.button {
+	margin-right: 2em;
+	background: #2196F3;
+	color: white;
+	opacity: .8;
+	padding: 1em;
+	border-radius: 90%;
+	float: right;
+}
+
+input[type="checkbox"] {
+	margin: 10px 5px;
+}
+
+/******************************************
+/* TEST 1
+/******************************************/
+
+.q2, .q3 {
+	display: none;
+}
+
+.next1, .next2, .finish {
+	padding: 1em;
+	color: #2196F3;
+	float: right;
+}
+
+.previous2, .previous3 {
+	padding: 1em;
+	color: #2196F3;
+	float: left;
+}
+
+.finito {
+	border: 2px dotted #0063C0;
+	background-color: #2196F3;
+	color: white;
+	opacity: .5;
+	align-self: center;
+	display: none;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
 }
 
 /******************************************
@@ -162,17 +368,12 @@ h3 {
 /******************************************/
 
 footer {
-	background-color: #2196F3;
+	background-color: #003763;
 	bottom: 0;
 	color: white;
 	position: fixed;
 	text-align: center;
 	width: 100%;
-}
-
-menu {
-	float: right;
-	margin-left: 20px;
 }
 
 footer ul {
@@ -183,8 +384,28 @@ footer li {
 	display: inline-block;
 }
 
+menu {
+	float: right;
+	margin-left: 2em;
+}
+
 i {
-	font-size: 20px;
+	font-size: 1.5rem;
 	color: white;
-	padding: 10px 20px;
+	padding: .5em 1em;
+}
+
+.flex-container {
+	display: flex;
+  	justify-content: space-between;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/******************************************/
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }

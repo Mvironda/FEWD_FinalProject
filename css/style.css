@@ -1,6 +1,6 @@
 /*
 Project Name: My upReach App
-Client: upReac
+Client: upReach
 Author: Madeleine
 Developer @GA in London
 */
@@ -53,12 +53,12 @@ Max-width: 100%
 html {
     background-color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
 .last {
-	padding-bottom: 50px;
+	padding-bottom: 4em;
 }
 
 /******************************************
@@ -93,8 +93,8 @@ header {
 
 .profile-main {
 	text-align: center;
-	font-size: 1.75rem;
-	margin: 1em;
+	font-size: 1.7rem;
+	margin: 1.5em;
 }
 
 .cta {
@@ -108,14 +108,13 @@ header {
 	background: #2196F3;
 	border-bottom: 1px solid #58666e;
 	opacity: .6;
-	padding: 1em;
+	padding: 1.4em;
 	margin-bottom: 1em;
 }
 
 a {
 	color: white;
 	text-decoration: none;
-	font-size: 1rem;
 }
 
 h2 {
@@ -125,7 +124,18 @@ h2 {
 
 p {
 	color: #918C8C;
+	font-size: 1.4rem;
 	margin-left: 1em;
+	text-align: justify;
+	padding: 0 1em;
+}
+
+.action a {
+	font-size: 1.7em;
+}
+
+.action li {
+	margin: 1.7em 0;
 }
 
 .profile-main img {
@@ -138,7 +148,7 @@ p {
 }
 
 .action a {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 }
 
 .action li {
@@ -149,31 +159,92 @@ p {
 /* BOOKINGS
 /******************************************/
 
-h3 {
+.onetwoones {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	text-align: center;
+	padding: 2em;
+}
+
+table {
+	width: 100%;
+	margin: 10px;
+}
+
+caption {
+	background: #e97857;
+	padding: 20px 15px;
+	margin: 20px 0;
+	color: white;
+	font-size: 1.3rem;
+}
+
+/*.listing {
+	padding: 5px 10px;
+	margin-bottom: 15px;
+	background: none;
+	color: #2b2a2a;
+}*/
+
+td, th {
+	padding: 10px 15px;
+	border: 2px solid lightgrey;
+	font-size: 1.3rem;
+}
+
+th {
+	background: #63b5f6;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #bcdffb;
+}
+
+.nav caption {
+	font-size: 2rem;
+}
+
+.nav th {
+	width: 20%;
 	font-size: 1.5rem;
-	position: center;
+	border: none;
+	background-color: #2196F3;
+	margin: none;
+	border: 1px solid #2196F3;
 }
 
-.flex {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+.nav th:hover {
+	background: #e97857;
+	border: none;
 }
 
-.table li {
-	list-style: none;
-	display: inline-block;
-	border: .2em dotted #918C8C;
-	padding: 1em 7em;
-	width: 45%;
+/*.booking a {
+	border: none
+	border-radius: 50%;
+	padding: 1em;
+	color: #2196F3;
+}*/
+
+td.book {
+	background: #bcdffb;
+	padding: 5px;
+	text-decoration: bold;
 }
 
-.cta-orange {
-	background: #f5b61a;
-	padding: 1em 2em;
-	margin: 0 1em;
+td.book:hover {
+	background: lightgrey;
+	border: none;
+	cursor: pointer;
 }
+
+#show-this-on-click {
+	display: none;
+}
+
 
 /******************************************
 /* ONLINETESTS
@@ -182,12 +253,7 @@ h3 {
 h4 {
 	color: #3d5962;
 	text-align: center;
-	font-size: 1.4rem;
-}
-
-p {
-	text-align: justify;
-	padding: 0 1em;
+	font-size: 1.6rem;
 }
 
 .test {
@@ -225,7 +291,7 @@ p {
 }
 
 .test i:hover:before {
-	transform: scale(1.1);
+	transform: scale(1.4);
 }
 
 .fa-chess-queen {
@@ -262,7 +328,7 @@ p {
 
 .test a {
 	color: #3d5962;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	align-self: center;
 	display: block;
@@ -300,7 +366,7 @@ fieldset {
 }
 
 .hint {
-	color: #918C8C;
+	color: #2196F3;
 }
 
 #show-this-on-click {
@@ -351,15 +417,30 @@ input[type="checkbox"] {
 	float: left;
 }
 
+#block {
+	display: none;
+	color: red;
+}
+
+#block2 {
+	display: none;
+	color: red;	
+}
+
+#block3 {
+	display: none;
+	color: red;	
+}
+
 .finito {
 	border: 2px dotted #0063C0;
-	background-color: #2196F3;
-	color: white;
+	background-color: #bcdffb;
 	opacity: .5;
 	align-self: center;
 	display: none;
-    margin: 10px;
-    padding: 10px;
+    margin: 1em;
+    padding: 1em;
+    font-size: 1.7rem;
     text-align: center;
 }
 
@@ -390,9 +471,9 @@ menu {
 }
 
 i {
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	color: white;
-	padding: .5em 1em;
+	padding: .7em 1em;
 }
 
 .flex-container {
